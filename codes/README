@@ -1,4 +1,4 @@
-Note: The architecture was designed by me.
+
 The two github repositories I had referred and used were:
 1. https://github.com/ivendrov/order-embedding/blob/master/evaluation.py -- I had directly used this script to
 find the Recall@1 for the combination of CNN features and order embedding.
