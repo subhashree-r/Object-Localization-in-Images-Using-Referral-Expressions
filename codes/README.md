@@ -1,14 +1,8 @@
 
-The two github repositories I had referred and used were:
-1. https://github.com/ivendrov/order-embedding/blob/master/evaluation.py -- I had directly used this script to
-find the Recall@1 for the combination of CNN features and order embedding.
-2. https://github.com/danielricks/penseur -- I had used this module to encode Skip-thought vectors of the
-sentences.
 
-I had cached the image and text features as numpy which I later used for training. I am not attaching them due to size.
-
-Description of my scripts:
--> finalImageFeatureExtrScript.py -This script reads the referitcoco dataset and extract the image features using pre-trained VGG from the
+The Image and text features were cached as numpy which was later used for training. These are not attached due to the size limit.
+```
+finalImageFeatureExtrScript.py -This script reads the referitcoco dataset and extract the image features using pre-trained VGG from the
 bounding boxes present within each image
 -> finalImageFeatureConcat.py -This script cocatenates the bounding box image features with context features and the corresponding coordinates
 ->finalTextConcat.py - This script creates the training data for language features after extraction
@@ -20,3 +14,4 @@ within that image and retrieves that box with least distance.
 -> finalTrainingScriptL2.py - Trains a MLP by reducing L2 loss between image and query features
 ->finalTrainingSiameseScript.py -Trains a MLP by reducing contrastive loss between image and query features
 -> /notebooks/visEg1, visEg2 - Notebooks to visualize two example success cases
+```
